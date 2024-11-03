@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Achievers Collection</title>
+  <style>
+    /* Container styling */
+    .container {
+      position: relative;
+      width: 300px;
+      height: 250px;
+      background-color: #e8e8e8;
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #333;
+      transition: background 0.3s ease-in-out;
+    }
+
+    /* Default content */
+    .content-default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content-default img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .content-default h2 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    /* Hover content styling */
+    .content-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #11998e, #38ef7d);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .content-hover h2 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .content-hover p {
+      margin: 10px 20px;
+      line-height: 1.4;
+    }
+
+    .content-hover .button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #11998e;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .content-hover .button:hover {
+      background: #11998e;
+      color: #fff;
+    }
+
+    /* Show hover content on hover */
+    .container:hover .content-hover {
+      opacity: 1;
+    }
+
+    .container:hover .content-default {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Default Content -->
+    <div class="content-default">
+      <img src="logo_kse_ub_2.jpg" alt="High Achievers Icon">
+      <h2>High Achievers Collection</h2>
+    </div>
+
+    <!-- Hover Content -->
+    <div class="content-hover">
+      <h2>High Achievers Collection</h2>
+      <p>Congratulations to all the high-achievers of FEB UI! Take a close look and get ready to be inspired.</p>
+      <a href="#" class="button">LEARN MORE</a>
+    </div>
+  </div>
+
+</body>
+</html>
